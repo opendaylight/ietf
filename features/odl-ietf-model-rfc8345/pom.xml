@@ -9,36 +9,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opendaylight.mdsal</groupId>
+        <groupId>org.opendaylight.ietf</groupId>
         <artifactId>feature-parent</artifactId>
-        <version>14.0.16-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../feature-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.opendaylight.mdsal.model</groupId>
-    <artifactId>odl-mdsal-model-rfc8349</artifactId>
+    <artifactId>odl-ietf-model-rfc8345</artifactId>
     <packaging>feature</packaging>
-    <name>OpenDaylight :: MD-SAL :: Model :: RFC8349</name>
-    <description>Models from RFC8349</description>
+    <name>OpenDaylight :: IETF :: Model :: RFC8345</name>
+    <description>NMDA models from RFC8345</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc8344</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc6991</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-            <artifactId>rfc8349-ietf-routing</artifactId>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc8345-ietf-network</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-            <artifactId>rfc8349-ietf-ipv4-unicast-routing</artifactId>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc8345-ietf-network-state</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-            <artifactId>rfc8349-ietf-ipv6-unicast-routing</artifactId>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc8345-ietf-network-topology</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc8345-ietf-network-topology-state</artifactId>
         </dependency>
     </dependencies>
 </project>
