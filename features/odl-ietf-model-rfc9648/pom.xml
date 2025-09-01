@@ -9,33 +9,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opendaylight.mdsal</groupId>
+        <groupId>org.opendaylight.ietf</groupId>
         <artifactId>feature-parent</artifactId>
-        <version>14.0.16-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../feature-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.opendaylight.mdsal.model</groupId>
-    <artifactId>odl-mdsal-model-rfc9648</artifactId>
+    <artifactId>odl-ietf-model-rfc9648</artifactId>
     <packaging>feature</packaging>
-    <name>OpenDaylight :: MD-SAL :: Model :: RFC9648</name>
+    <name>OpenDaylight :: IETF :: Model :: RFC9648</name>
     <description>Models from RFC9648</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc8177</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc8177</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc9643</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc9643</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
+            <groupId>org.opendaylight.ietf.model</groupId>
             <artifactId>rfc9648</artifactId>
         </dependency>
     </dependencies>

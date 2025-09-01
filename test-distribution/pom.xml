@@ -335,7 +335,6 @@
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
-        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc9067</artifactId>
@@ -414,7 +413,6 @@
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
-        -->
     </dependencies>
 
     <scm>

@@ -76,20 +76,18 @@
         <module>odl-ietf-model-rfc8819</module>
         <module>odl-ietf-model-rfc8819-non-nmda</module>
         <module>odl-ietf-model-rfc8916</module>
-        <!--
-        <module>odl-mdsal-model-rfc9067</module>
-        <module>odl-mdsal-model-rfc9070</module>
-        <module>odl-mdsal-model-rfc9144</module>
-        <module>odl-mdsal-model-rfc9179</module>
-        <module>odl-mdsal-model-rfc9196-ietf-notification-capabilities</module>
-        <module>odl-mdsal-model-rfc9196-ietf-system-capabilities</module>
-        <module>odl-mdsal-model-rfc9640</module>
-        <module>odl-mdsal-model-rfc9641</module>
-        <module>odl-mdsal-model-rfc9642</module>
-        <module>odl-mdsal-model-rfc9643</module>
-        <module>odl-mdsal-model-rfc9644</module>
-        <module>odl-mdsal-model-rfc9645</module>
-        <module>odl-mdsal-model-rfc9648</module>
-        -->
+        <module>odl-ietf-model-rfc9067</module>
+        <module>odl-ietf-model-rfc9070</module>
+        <module>odl-ietf-model-rfc9144</module>
+        <module>odl-ietf-model-rfc9179</module>
+        <module>odl-ietf-model-rfc9196-ietf-notification-capabilities</module>
+        <module>odl-ietf-model-rfc9196-ietf-system-capabilities</module>
+        <module>odl-ietf-model-rfc9640</module>
+        <module>odl-ietf-model-rfc9641</module>
+        <module>odl-ietf-model-rfc9642</module>
+        <module>odl-ietf-model-rfc9643</module>
+        <module>odl-ietf-model-rfc9644</module>
+        <module>odl-ietf-model-rfc9645</module>
+        <module>odl-ietf-model-rfc9648</module>
     </modules>
 </project>
