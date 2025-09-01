@@ -28,24 +28,16 @@
 
     <modules>
         <!-- RFC6022 NETCONF Monitoring -->
-        <!--
         <module>rfc6022</module>
-        -->
 
         <!-- RFC6241 NETCONF -->
-        <!--
         <module>rfc6241</module>
-        -->
 
         <!-- RFC6243 NETCONF With Defaults -->
-        <!--
         <module>rfc6243</module>
-        -->
 
-        <!-- RFC6243 NETCONF Base Notifications -->
-        <!--
+        <!-- RFC6470 NETCONF Base Notifications -->
         <module>rfc6470</module>
-        -->
 
         <!-- RFC6991 -->
         <module>rfc6991-ietf-inet-types</module>
