@@ -22,6 +22,7 @@
 
     <properties>
         <odlparent.dependency.enforce>true</odlparent.dependency.enforce>
+        <odlparent.spotbugs.skip>true</odlparent.spotbugs.skip>
     </properties>
 
     <dependencyManagement>

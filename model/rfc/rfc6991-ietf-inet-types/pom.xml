@@ -18,9 +18,12 @@
 
     <artifactId>rfc6991-ietf-inet-types</artifactId>
     <packaging>bundle</packaging>
-
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
+
+    <properties>
+        <odlparent.spotbugs.skip>false</odlparent.spotbugs.skip>
+    </properties>
 
     <dependencies>
         <dependency>
