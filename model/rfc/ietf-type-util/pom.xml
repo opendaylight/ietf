@@ -10,15 +10,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opendaylight.mdsal</groupId>
-        <artifactId>binding-parent</artifactId>
-        <version>14.0.16-SNAPSHOT</version>
-        <relativePath>../../../binding/binding-parent/pom.xml</relativePath>
+        <groupId>org.opendaylight.ietf</groupId>
+        <artifactId>bnd-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../../../bnd-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.opendaylight.mdsal.model</groupId>
     <artifactId>ietf-type-util</artifactId>
-    <packaging>bundle</packaging>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+    <description>Utilities to support ietf-{inet,yang}-types YANG modules</description>
+
+    <properties>
+        <!-- FIXME: remove this override -->
+        <maven.javadoc.failOnWarnings>false</maven.javadoc.failOnWarnings>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -35,11 +41,4 @@
             <artifactId>mockito-configuration</artifactId>
         </dependency>
     </dependencies>
-
-    <scm>
-        <connection>scm:git:http://git.opendaylight.org/gerrit/controller.git</connection>
-        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/controller.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL</url>
-    </scm>
 </project>

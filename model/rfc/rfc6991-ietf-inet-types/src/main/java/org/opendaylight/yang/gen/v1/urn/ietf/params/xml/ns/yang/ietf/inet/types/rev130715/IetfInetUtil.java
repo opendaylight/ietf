@@ -22,8 +22,8 @@ import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 import org.eclipse.jdt.annotation.NonNull;
-import org.opendaylight.mdsal.model.ietf.type.util.Ipv4Utils;
-import org.opendaylight.mdsal.model.ietf.type.util.Ipv6Utils;
+import org.opendaylight.ietf.type.util.Ipv4Utils;
+import org.opendaylight.ietf.type.util.Ipv6Utils;
 import org.opendaylight.yangtools.binding.reflect.StringValueObjectFactory;
 
 /**
