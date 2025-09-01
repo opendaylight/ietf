@@ -29,6 +29,7 @@
         <module>bnd-parent</module>
         <module>features</module>
         <module>model</module>
+        <module>test-distribution</module>
     </modules>
 
     <properties>
