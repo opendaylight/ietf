@@ -5,11 +5,9 @@
  * terms of the Eclipse Public License v1.0 which accompanies this distribution,
  * and is available at http://www.eclipse.org/legal/epl-v10.html
  */
-package org.opendaylight.mdsal.model.ietf.type.util;
+package org.opendaylight.ietf.type.util;
 
 import static com.google.common.base.Preconditions.checkArgument;
-
-import org.eclipse.jdt.annotation.NonNull;
 
 /**
  * IPv4 address parsing for {@code ietf-inet-types} ipv4-address. This is an internal implementation class, not meant to
@@ -17,14 +15,17 @@ import org.eclipse.jdt.annotation.NonNull;
  * to it have been previously validated to conform to the regular expressions defined in the YANG model.
  */
 public final class Ipv4Utils {
+    /**
+     * The length of an IPv4 address in bytes.
+     */
     public static final int INET4_LENGTH = 4;
 
     private Ipv4Utils() {
         // Hidden on purpose
     }
 
-    public static void fillIpv4Bytes(final byte @NonNull[] bytes, final int byteStart, final String str,
-            final int strStart, final int strLimit) {
+    public static void fillIpv4Bytes(final byte[] bytes, final int byteStart, final String str, final int strStart,
+            final int strLimit) {
         int out = byteStart;
         int val = 0;
         for (int i = strStart; i < strLimit; ++i) {
@@ -55,7 +56,7 @@ public final class Ipv4Utils {
         return prev << 8 | current;
     }
 
-    public static byte @NonNull[] addressBytes(final String str, final int limit) {
+    public static byte[] addressBytes(final String str, final int limit) {
         final byte[] bytes = new byte[4];
         Ipv4Utils.fillIpv4Bytes(bytes, 0, str, 0, limit);
         return bytes;
@@ -65,13 +66,13 @@ public final class Ipv4Utils {
         return (bits >>> 24) + "." + (bits >>> 16 & 0xFF) + "." + (bits >>> 8 & 0xFF) + "." + (bits & 0xFF);
     }
 
-    public static String addressString(final byte @NonNull[] bytes) {
-        final StringBuilder sb = new StringBuilder(15);
+    public static String addressString(final byte[] bytes) {
+        final var sb = new StringBuilder(15);
         appendIpv4String(sb, bytes);
         return sb.toString();
     }
 
-    public static void appendIpv4String(final StringBuilder sb, final byte @NonNull[] bytes) {
+    public static void appendIpv4String(final StringBuilder sb, final byte[] bytes) {
         checkArgument(bytes.length == INET4_LENGTH, "IPv4 address length is 4 bytes");
 
         sb.append(Byte.toUnsignedInt(bytes[0]));
