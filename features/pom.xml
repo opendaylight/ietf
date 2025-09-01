@@ -29,12 +29,10 @@
         <module>feature-parent</module>
 
         <!-- Models -->
-        <!--
-        <module>odl-mdsal-model-rfc6022</module>
-        <module>odl-mdsal-model-rfc6241</module>
-        <module>odl-mdsal-model-rfc6243</module>
-        <module>odl-mdsal-model-rfc6470</module>
-        -->
+        <module>odl-ietf-model-rfc6022</module>
+        <module>odl-ietf-model-rfc6241</module>
+        <module>odl-ietf-model-rfc6243</module>
+        <module>odl-ietf-model-rfc6470</module>
         <module>odl-ietf-model-rfc6991</module>
         <!--
         <module>odl-mdsal-model-rfc7224</module>

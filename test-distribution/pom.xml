@@ -47,7 +47,6 @@
         </dependency>
 
         <!-- Models -->
-        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc6022</artifactId>
@@ -76,7 +75,6 @@
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
-        -->
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc6991</artifactId>
