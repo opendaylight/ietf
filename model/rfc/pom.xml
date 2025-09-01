@@ -60,9 +60,7 @@
         -->
 
         <!-- RFC7952 YANG Metadata -->
-        <!--
         <module>rfc7952</module>
-        -->
 
         <!-- RFC7407 SNMP Configuration -->
         <!--
@@ -97,10 +95,8 @@
         -->
 
         <!-- RFC8342 Network Management Datastore Architecture -->
-        <!--
         <module>rfc8342-ietf-datastores</module>
         <module>rfc8342-ietf-origin</module>
-        -->
 
         <!-- RFC8343 Interface Management -->
         <!--
