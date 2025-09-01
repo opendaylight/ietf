@@ -18,9 +18,12 @@
 
     <artifactId>rfc8519-ietf-ethertypes</artifactId>
     <packaging>bundle</packaging>
-
     <name>${project.artifactId}</name>
     <description>RFC8519 ietf-ethertypes</description>
+
+    <properties>
+        <odlparent.spotbugs.skip>false</odlparent.spotbugs.skip>
+    </properties>
 
     <build>
         <plugins>

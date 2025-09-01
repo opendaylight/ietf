@@ -18,9 +18,12 @@
 
     <artifactId>rfc8294-ietf-routing-types</artifactId>
     <packaging>bundle</packaging>
-
     <name>${project.artifactId}</name>
     <description>RFC8294 ietf-routing-types</description>
+
+    <properties>
+        <odlparent.spotbugs.skip>false</odlparent.spotbugs.skip>
+    </properties>
 
     <dependencies>
         <dependency>
