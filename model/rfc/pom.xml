@@ -55,25 +55,17 @@
         <module>rfc7407-ietf-x509-cert-to-name</module>
 
         <!-- RFC8040 RESTCONF -->
-        <!--
         <module>rfc8040-ietf-restconf</module>
         <module>rfc8040-ietf-restconf-monitoring</module>
-        -->
 
         <!-- RFC8072 YANG Patch -->
-        <!--
         <module>rfc8072</module>
-        -->
 
         <!-- RFC8177 Data Model for Key Chains -->
-        <!--
         <module>rfc8177</module>
-        -->
 
         <!-- RFC8294 Common YANG Data Types for the Routing Area -->
-        <!--
         <module>rfc8294-ietf-routing-types</module>
-        -->
 
         <!-- RFC8341 NETCONF ACM -->
         <module>rfc8341</module>
