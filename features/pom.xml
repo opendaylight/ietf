@@ -40,13 +40,11 @@
         <module>odl-ietf-model-rfc7407-ietf-snmp</module>
         <module>odl-ietf-model-rfc7407-ietf-x509-cert-to-name</module>
         <module>odl-ietf-model-rfc7952</module>
-        <!--
-        <module>odl-mdsal-model-rfc8040-ietf-restconf</module>
-        <module>odl-mdsal-model-rfc8040-ietf-restconf-monitoring</module>
-        <module>odl-mdsal-model-rfc8072</module>
-        <module>odl-mdsal-model-rfc8177</module>
-        <module>odl-mdsal-model-rfc8294</module>
-        -->
+        <module>odl-ietf-model-rfc8040-ietf-restconf</module>
+        <module>odl-ietf-model-rfc8040-ietf-restconf-monitoring</module>
+        <module>odl-ietf-model-rfc8072</module>
+        <module>odl-ietf-model-rfc8177</module>
+        <module>odl-ietf-model-rfc8294</module>
         <module>odl-ietf-model-rfc8341</module>
         <module>odl-ietf-model-rfc8342</module>
         <module>odl-ietf-model-rfc8343</module>
