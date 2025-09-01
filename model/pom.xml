@@ -27,9 +27,7 @@
 
     <modules>
         <module>bundle-parent</module>
-        <!--
         <module>iana</module>
         <module>rfc</module>
-        -->
     </modules>
 </project>

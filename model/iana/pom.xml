@@ -8,7 +8,7 @@
  and is available at http://www.eclipse.org/legal/epl-v10.html
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.opendaylight.odlparent</groupId>
         <artifactId>odlparent-lite</artifactId>
@@ -16,13 +16,10 @@
         <relativePath/>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opendaylight.mdsal.model</groupId>
-    <artifactId>model-iana-aggregator</artifactId>
-    <version>14.0.16-SNAPSHOT</version>
+    <groupId>org.opendaylight.ietf</groupId>
+    <artifactId>iana-aggregator</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>${project.artifactId}</name>
-    <description>${project.artifactId}</description>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -31,24 +28,36 @@
 
     <modules>
         <!-- RFC7224 and updates -->
+        <!--
         <module>iana-if-type</module>
+        -->
 
         <!-- RFC7317 and updates -->
+        <!--
         <module>iana-crypt-hash</module>
+        -->
 
         <!-- RFC8294 and updates -->
+        <!--
         <module>iana-routing-types</module>
+        -->
 
         <!-- RFC8348 and updates -->
+        <!--
         <module>iana-hardware</module>
+        -->
 
         <!-- RFC9644 and updates -->
+        <!--
         <module>iana-ssh-encryption-algs</module>
         <module>iana-ssh-key-exchange-algs</module>
         <module>iana-ssh-mac-algs</module>
         <module>iana-ssh-public-key-algs</module>
+        -->
 
         <!-- RFC9645 and updates -->
+        <!--
         <module>iana-tls-cipher-suite-algs</module>
+        -->
     </modules>
 </project>
