@@ -5,14 +5,13 @@
  * terms of the Eclipse Public License v1.0 which accompanies this distribution,
  * and is available at http://www.eclipse.org/legal/epl-v10.html
  */
-package org.opendaylight.mdsal.model.ietf.type.util;
+package org.opendaylight.ietf.type.util;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Verify.verify;
 
 import java.util.Arrays;
 import java.util.HexFormat;
-import org.eclipse.jdt.annotation.NonNull;
 
 /**
  * IPv6 address parsing for {@code ietf-inet-types} ipv6-address and ipv6-prefix. This is an internal implementation
@@ -41,6 +40,9 @@ import org.eclipse.jdt.annotation.NonNull;
  * same variable names, comments and code flow.
  */
 public final class Ipv6Utils {
+    /**
+     * The length of an IPv6 address in bytes.
+     */
     public static final int INET6_LENGTH = 16;
 
     private Ipv6Utils() {
@@ -56,7 +58,7 @@ public final class Ipv6Utils {
      * @throws NullPointerException if ipv6address is null
      */
     @SuppressWarnings("checkstyle:localVariableName")
-    public static void fillIpv6Bytes(final byte @NonNull[] bytes, final String str, final int strLimit) {
+    public static void fillIpv6Bytes(final byte[] bytes, final String str, final int strLimit) {
         // Leading :: requires some special handling.
         int i = 0;
         if (str.charAt(i) == ':') {
