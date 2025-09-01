@@ -9,29 +9,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opendaylight.mdsal</groupId>
+        <groupId>org.opendaylight.ietf</groupId>
         <artifactId>feature-parent</artifactId>
-        <version>14.0.16-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../feature-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.opendaylight.mdsal.model</groupId>
-    <artifactId>odl-mdsal-model-rfc8341</artifactId>
+    <artifactId>odl-ietf-model-rfc7317-ietf-system</artifactId>
     <packaging>feature</packaging>
 
-    <name>OpenDaylight :: MD-SAL :: Model :: RFC8341</name>
-    <description>Models from RFC8341</description>
+    <name>OpenDaylight :: IETF :: Model :: RFC7317 ietf-system</name>
+    <description>ietf-system module from RFC7317</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc6991</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc7317-iana-crypt-hash</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-            <artifactId>rfc8341</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc8341</artifactId>
+            <classifier>features</classifier>
+            <type>xml</type>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc7317-ietf-system</artifactId>
         </dependency>
     </dependencies>
 </project>
