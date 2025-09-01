@@ -16,23 +16,24 @@
         <relativePath/>
     </parent>
 
-    <groupId>org.opendaylight.mdsal</groupId>
+    <groupId>org.opendaylight.ietf</groupId>
     <artifactId>bnd-parent</artifactId>
-    <version>14.0.16-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>Bundle parent (bnd-based)</description>
 
     <properties>
+        <maven.javadoc.failOnWarnings>true</maven.javadoc.failOnWarnings>
         <odlparent.dependency.enforce>true</odlparent.dependency.enforce>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.opendaylight.mdsal</groupId>
-                <artifactId>mdsal-artifacts</artifactId>
-                <version>14.0.16-SNAPSHOT</version>
+                <groupId>org.opendaylight.ietf</groupId>
+                <artifactId>ietf-artifacts</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -40,9 +41,9 @@
     </dependencyManagement>
 
     <scm>
-        <connection>scm:git:ssh://git.opendaylight.org:29418/mdsal.git</connection>
-        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/mdsal.git</developerConnection>
+        <connection>scm:git:ssh://git.opendaylight.org:29418/ietf.git</connection>
+        <developerConnection>scm:git:ssh://git.opendaylight.org:29418/ietf.git</developerConnection>
+        <url>https://lf-opendaylight.atlassian.net/wiki/spaces/ODL/pages/282525740/IETF+Liaison+Project</url>
         <tag>HEAD</tag>
-        <url>https://wiki.opendaylight.org/display/ODL/MD-SAL</url>
     </scm>
 </project>
