@@ -20,6 +20,10 @@
     <description>YANG Library (NMDA) model</description>
     <packaging>bundle</packaging>
 
+    <properties>
+        <odlparent.spotbugs.skip>false</odlparent.spotbugs.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>

@@ -18,9 +18,12 @@
 
     <artifactId>rfc8776-ietf-te-types</artifactId>
     <packaging>bundle</packaging>
-
     <name>${project.artifactId}</name>
     <description>RFC8776 ietf-te-types</description>
+
+    <properties>
+        <odlparent.spotbugs.skip>false</odlparent.spotbugs.skip>
+    </properties>
 
     <dependencies>
         <dependency>
