@@ -82,7 +82,6 @@
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
-        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc7224</artifactId>
@@ -90,7 +89,6 @@
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
-        -->
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc7317-iana-crypt-hash</artifactId>
@@ -167,13 +165,13 @@
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
-        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc8343</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc8344</artifactId>
