@@ -132,47 +132,31 @@
         <module>rfc8572-ietf-sztp-conveyed-info</module>
 
         <!-- RFC8639 Subscription to YANG Notifications -->
-        <!--
         <module>rfc8639</module>
-        -->
 
         <!-- RFC8641 Subscription to Datastore Updates -->
-        <!--
         <module>rfc8641</module>
-        -->
 
         <!-- RFC8650 RESTCONF Dynamic Subscription -->
-        <!--
         <module>rfc8650</module>
-        -->
 
         <!-- RFC8776 Common YANG Data Types for Traffic Engineering -->
-        <!--
         <module>rfc8776-ietf-te-types</module>
         <module>rfc8776-ietf-te-packet-types</module>
-        -->
 
         <!-- RFC8795 YANG Data Model for Traffic Engineering (TE) Topologies -->
-        <!--
         <module>rfc8795-ietf-te-topology</module>
         <module>rfc8795-ietf-te-topology-state</module>
-        -->
 
         <!-- RFC8808 Factory Default -->
-        <!--
         <module>rfc8808</module>
-        -->
 
         <!-- RFC8819 YANG Module Tags -->
-        <!--
         <module>rfc8819-ietf-module-tags</module>
         <module>rfc8819-ietf-module-tags-state</module>
-        -->
 
         <!-- RFC8916 YANG Data Model for the Multicast Source Discovery Protocol (MSDP) -->
-        <!--
         <module>rfc8916</module>
-        -->
 
         <!-- RFC9067 Data Model for Routing Policy -->
         <!--
