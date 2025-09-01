@@ -167,7 +167,6 @@
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
-        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc8344</artifactId>
@@ -216,6 +215,7 @@
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc8519</artifactId>

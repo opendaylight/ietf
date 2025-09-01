@@ -9,34 +9,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opendaylight.mdsal</groupId>
+        <groupId>org.opendaylight.ietf</groupId>
         <artifactId>feature-parent</artifactId>
-        <version>14.0.16-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../feature-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.opendaylight.mdsal.model</groupId>
-    <artifactId>odl-mdsal-model-rfc8346-non-nmda</artifactId>
+    <artifactId>odl-ietf-model-rfc8348-non-nmda</artifactId>
     <packaging>feature</packaging>
-    <name>OpenDaylight :: MD-SAL :: Model :: RFC8346 :: NON-NMDA</name>
-    <description>Non-NMDA models from RFC8346</description>
+    <name>OpenDaylight :: IETF :: Model :: RFC8348 :: NON-NMDA</name>
+    <description>Non-NMDA models from RFC8348</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc8345-non-nmda</artifactId>
+            <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc8348</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opendaylight.mdsal.model</groupId>
-            <artifactId>odl-mdsal-model-rfc8346</artifactId>
-            <classifier>features</classifier>
-            <type>xml</type>
-        </dependency>
-        <dependency>
-            <groupId>org.opendaylight.mdsal.binding.model.ietf</groupId>
-            <artifactId>rfc8346-ietf-l3-unicast-topology-state</artifactId>
+            <groupId>org.opendaylight.ietf.model</groupId>
+            <artifactId>rfc8348-ietf-hardware-state</artifactId>
         </dependency>
     </dependencies>
 </project>

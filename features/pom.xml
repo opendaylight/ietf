@@ -48,15 +48,15 @@
         <module>odl-ietf-model-rfc8341</module>
         <module>odl-ietf-model-rfc8342</module>
         <module>odl-ietf-model-rfc8343</module>
+        <module>odl-ietf-model-rfc8344</module>
+        <module>odl-ietf-model-rfc8345</module>
+        <module>odl-ietf-model-rfc8345-non-nmda</module>
+        <module>odl-ietf-model-rfc8346</module>
+        <module>odl-ietf-model-rfc8346-non-nmda</module>
+        <module>odl-ietf-model-rfc8348</module>
+        <module>odl-ietf-model-rfc8348-non-nmda</module>
+        <module>odl-ietf-model-rfc8349</module>
         <!--
-        <module>odl-mdsal-model-rfc8344</module>
-        <module>odl-mdsal-model-rfc8345</module>
-        <module>odl-mdsal-model-rfc8345-non-nmda</module>
-        <module>odl-mdsal-model-rfc8346</module>
-        <module>odl-mdsal-model-rfc8346-non-nmda</module>
-        <module>odl-mdsal-model-rfc8348</module>
-        <module>odl-mdsal-model-rfc8348-non-nmda</module>
-        <module>odl-mdsal-model-rfc8349</module>
         <module>odl-mdsal-model-rfc8519</module>
         <module>odl-mdsal-model-rfc8520</module>
         <module>odl-mdsal-model-rfc8525</module>
