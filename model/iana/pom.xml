@@ -39,6 +39,9 @@
         <!-- RFC8348 and updates -->
         <module>iana-hardware</module>
 
+        <!-- RFC8675 and updates -->
+        <module>iana-tunnel-type</module>
+
         <!-- RFC9644 and updates -->
         <module>iana-ssh-encryption-algs</module>
         <module>iana-ssh-key-exchange-algs</module>

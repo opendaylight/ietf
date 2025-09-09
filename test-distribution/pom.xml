@@ -295,6 +295,12 @@
         </dependency>
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
+            <artifactId>odl-ietf-model-rfc8675</artifactId>
+            <classifier>features</classifier>
+            <type>xml</type>
+        </dependency>
+        <dependency>
+            <groupId>org.opendaylight.ietf</groupId>
             <artifactId>odl-ietf-model-rfc8776</artifactId>
             <classifier>features</classifier>
             <type>xml</type>

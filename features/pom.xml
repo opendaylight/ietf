@@ -69,6 +69,7 @@
         <module>odl-ietf-model-rfc8639</module>
         <module>odl-ietf-model-rfc8641</module>
         <module>odl-ietf-model-rfc8650</module>
+        <module>odl-ietf-model-rfc8675</module>
         <module>odl-ietf-model-rfc8776</module>
         <module>odl-ietf-model-rfc8795</module>
         <module>odl-ietf-model-rfc8795-non-nmda</module>
