@@ -13,7 +13,7 @@
         <groupId>org.opendaylight.ietf</groupId>
         <artifactId>bnd-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../../bnd-parent/pom.xml</relativePath>
+        <relativePath>../../bnd-parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>ietf-type-util</artifactId>

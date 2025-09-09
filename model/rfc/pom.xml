@@ -42,7 +42,6 @@
         <!-- RFC6991 -->
         <module>rfc6991-ietf-inet-types</module>
         <module>rfc6991-ietf-yang-types</module>
-        <module>ietf-type-util</module>
 
         <!-- RFC7317 System Management -->
         <module>rfc7317-ietf-system</module>
