@@ -18,4 +18,5 @@ The repository is split into the following logical parts:
 * a library of [YANG models](model) packaged as JARs with their Java bindings
 * a library of [Karaf features](features) packaging all Java artifacts hosted in this repository
 * a [parent pom.xml for bundle artifacts](bnd-parent)
+* a collection of model-related [libraties](lib)
 * [Karaf distribution](test-distribution) packaging all features for testing purposes
