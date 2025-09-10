@@ -27,5 +27,6 @@
 
     <modules>
         <module>ietf-type-util</module>
+        <module>rfc8294-netty</module>
     </modules>
 </project>
