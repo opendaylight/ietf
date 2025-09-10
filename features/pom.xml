@@ -90,5 +90,8 @@
         <module>odl-ietf-model-rfc9644</module>
         <module>odl-ietf-model-rfc9645</module>
         <module>odl-ietf-model-rfc9648</module>
+
+        <!-- Netty integrations -->
+        <module>odl-ietf-rfc8294-netty</module>
     </modules>
 </project>
