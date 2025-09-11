@@ -17,7 +17,7 @@
 
     <groupId>org.opendaylight.ietf</groupId>
     <artifactId>ietf-aggregator</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <name>ietf</name> <!-- Used by Sonar to set project name -->
     <description>
