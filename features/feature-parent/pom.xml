@@ -17,7 +17,7 @@
 
     <groupId>org.opendaylight.ietf</groupId>
     <artifactId>feature-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <dependencyManagement>
@@ -32,7 +32,7 @@
             <dependency>
                 <groupId>org.opendaylight.ietf</groupId>
                 <artifactId>ietf-artifacts</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
