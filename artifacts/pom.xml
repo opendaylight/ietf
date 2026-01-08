@@ -52,23 +52,6 @@
                 <version>1.0.3-SNAPSHOT</version>
             </dependency>
 
-            <!-- RFC6991 -->
-            <dependency>
-                <groupId>org.opendaylight.ietf.model</groupId>
-                <artifactId>rfc6991-ietf-inet-types</artifactId>
-                <version>1.0.3-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.opendaylight.ietf.model</groupId>
-                <artifactId>rfc6991-ietf-yang-types</artifactId>
-                <version>1.0.3-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.opendaylight.ietf</groupId>
-                <artifactId>ietf-type-util</artifactId>
-                <version>1.0.3-SNAPSHOT</version>
-            </dependency>
-
             <!-- RFC7224, updated from: http://www.iana.org/assignments/yang-parameters/ -->
             <dependency>
                 <groupId>org.opendaylight.ietf.model</groupId>
@@ -566,6 +549,23 @@
                 <version>1.0.3-SNAPSHOT</version>
             </dependency>
 
+            <!-- RFC9911 -->
+            <dependency>
+                <groupId>org.opendaylight.ietf.model</groupId>
+                <artifactId>rfc9911-ietf-inet-types</artifactId>
+                <version>1.0.3-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ietf.model</groupId>
+                <artifactId>rfc9911-ietf-yang-types</artifactId>
+                <version>1.0.3-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ietf</groupId>
+                <artifactId>ietf-type-util</artifactId>
+                <version>1.0.3-SNAPSHOT</version>
+            </dependency>
+
             <!-- Features -->
             <dependency>
                 <groupId>org.opendaylight.ietf</groupId>
@@ -591,13 +591,6 @@
             <dependency>
                 <groupId>org.opendaylight.ietf</groupId>
                 <artifactId>odl-ietf-model-rfc6470</artifactId>
-                <version>1.0.3-SNAPSHOT</version>
-                <classifier>features</classifier>
-                <type>xml</type>
-            </dependency>
-            <dependency>
-                <groupId>org.opendaylight.ietf</groupId>
-                <artifactId>odl-ietf-model-rfc6991</artifactId>
                 <version>1.0.3-SNAPSHOT</version>
                 <classifier>features</classifier>
                 <type>xml</type>
@@ -997,6 +990,13 @@
             <dependency>
                 <groupId>org.opendaylight.ietf</groupId>
                 <artifactId>odl-ietf-rfc8294-netty</artifactId>
+                <version>1.0.3-SNAPSHOT</version>
+                <classifier>features</classifier>
+                <type>xml</type>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ietf</groupId>
+                <artifactId>odl-ietf-model-rfc9911</artifactId>
                 <version>1.0.3-SNAPSHOT</version>
                 <classifier>features</classifier>
                 <type>xml</type>

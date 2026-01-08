@@ -39,10 +39,6 @@
         <!-- RFC6470 NETCONF Base Notifications -->
         <module>rfc6470</module>
 
-        <!-- RFC6991 -->
-        <module>rfc6991-ietf-inet-types</module>
-        <module>rfc6991-ietf-yang-types</module>
-
         <!-- RFC7317 System Management -->
         <module>rfc7317-ietf-system</module>
 
@@ -200,5 +196,9 @@
 
         <!-- RFC9648 YANG Data Model for TCP -->
         <module>rfc9648</module>
+
+        <!-- RFC9911 -->
+        <module>rfc9911-ietf-inet-types</module>
+        <module>rfc9911-ietf-yang-types</module>
     </modules>
 </project>

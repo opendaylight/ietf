@@ -25,11 +25,11 @@
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc6991-ietf-yang-types</artifactId>
+            <artifactId>rfc8819-ietf-module-tags</artifactId>
         </dependency>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc8819-ietf-module-tags</artifactId>
+            <artifactId>rfc9911-ietf-yang-types</artifactId>
         </dependency>
     </dependencies>
 

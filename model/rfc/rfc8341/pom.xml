@@ -24,7 +24,7 @@
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc6991-ietf-yang-types</artifactId>
+            <artifactId>rfc9911-ietf-yang-types</artifactId>
         </dependency>
     </dependencies>
 
