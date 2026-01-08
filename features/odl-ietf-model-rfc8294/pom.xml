@@ -23,7 +23,7 @@
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf</groupId>
-            <artifactId>odl-ietf-model-rfc6991</artifactId>
+            <artifactId>odl-ietf-model-rfc9911</artifactId>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>

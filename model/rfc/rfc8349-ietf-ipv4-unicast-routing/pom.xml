@@ -25,11 +25,11 @@
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc6991-ietf-inet-types</artifactId>
+            <artifactId>rfc8349-ietf-routing</artifactId>
         </dependency>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc8349-ietf-routing</artifactId>
+            <artifactId>rfc9911-ietf-inet-types</artifactId>
         </dependency>
     </dependencies>
 

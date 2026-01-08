@@ -25,7 +25,7 @@
     <dependencies>
         <dependency>
             <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc6991-ietf-inet-types</artifactId>
+            <artifactId>rfc9911-ietf-inet-types</artifactId>
         </dependency>
     </dependencies>
 
