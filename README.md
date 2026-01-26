@@ -1,4 +1,4 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.opendaylight.ietf/ietf-artifacts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.opendaylight.ietf/ietf-artifacts)
+[![Maven Central](https://maven-badges.sml.io/maven-central/org.opendaylight.ietf/ietf-artifacts/badge.svg)](https://maven-badges.sml.io/maven-central/org.opendaylight.ietf/ietf-artifacts)
 [![License](https://img.shields.io/badge/License-EPL%201.0-blue.svg)](https://opensource.org/licenses/EPL-1.0)
 
 # IETF Liaison Project
