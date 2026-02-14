@@ -30,3 +30,5 @@ dependency-reduced-pom.xml
 # Sphinx documentation
 .tox/
 docs/_build/
+.cache/
+node_modules/
