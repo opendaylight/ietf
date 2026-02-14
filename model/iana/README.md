@@ -10,12 +10,13 @@ We package exactly one revision of each model. The revisions of models can be bu
 YANG files included here should always come from the above IANA registry.
 
 Model currently packaged are:
-* [iana-crypt-hash.yang](iana-crypt-hash)
-* [iana-hardware.yang]( iana-hardware)
-* [iana-if-type.yang](iana-if-type)
-* [iana-routing-types.yang](iana-routing-types)
-* [iana-ssh-encryption-algs.yang](iana-ssh-encryption-algs)
-* [iana-ssh-key-exchange-algs.yang](iana-ssh-key-exchange-algs)
-* [iana-ssh-mac-algs.yang](iana-ssh-mac-algs)
-* [iana-ssh-public-key-algs.yang](iana-ssh-public-key-algs)
-* [iana-tls-cipher-suite-algs.yang](iana-tls-cipher-suite-algs)
+
+- [iana-crypt-hash.yang](iana-crypt-hash)
+- [iana-hardware.yang](iana-hardware)
+- [iana-if-type.yang](iana-if-type)
+- [iana-routing-types.yang](iana-routing-types)
+- [iana-ssh-encryption-algs.yang](iana-ssh-encryption-algs)
+- [iana-ssh-key-exchange-algs.yang](iana-ssh-key-exchange-algs)
+- [iana-ssh-mac-algs.yang](iana-ssh-mac-algs)
+- [iana-ssh-public-key-algs.yang](iana-ssh-public-key-algs)
+- [iana-tls-cipher-suite-algs.yang](iana-tls-cipher-suite-algs)

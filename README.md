@@ -14,9 +14,10 @@ The scope of this project is outlined in the
 ## Repository organization
 
 The repository is split into the following logical parts:
-* the [Bill Of Materials](artifacts)
-* a library of [YANG models](model) packaged as JARs with their Java bindings
-* a library of [Karaf features](features) packaging all Java artifacts hosted in this repository
-* a [parent pom.xml for bundle artifacts](bnd-parent)
-* a collection of model-related [libraries](lib)
-* [Karaf distribution](test-distribution) packaging all features for testing purposes
+
+- the [Bill Of Materials](artifacts)
+- a library of [YANG models](model) packaged as JARs with their Java bindings
+- a library of [Karaf features](features) packaging all Java artifacts hosted in this repository
+- a [parent pom.xml for bundle artifacts](bnd-parent)
+- a collection of model-related [libraries](lib)
+- [Karaf distribution](test-distribution) packaging all features for testing purposes
