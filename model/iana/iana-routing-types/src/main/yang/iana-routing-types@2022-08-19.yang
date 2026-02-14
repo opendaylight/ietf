@@ -55,12 +55,12 @@ module iana-routing-types {
    revision 2021-05-26 {
      description "Added ‘OBSOLETE’ to description field for SAFI value 7.";
   }
-  
+
    revision 2021-05-18 {
-     description "Added Address Family Number value 31, 
+     description "Added Address Family Number value 31,
                   SAFI value 9.";
   }
-  
+
    revision 2021-03-23 {
      description "Added SAFI value 78.";
   }
@@ -79,9 +79,9 @@ module iana-routing-types {
    revision 2020-07-02 {
      description "Added SAFI value 76.";
   }
-  
+
    revision 2020-05-12 {
-     description "Added Address Family Number value 16398, 
+     description "Added Address Family Number value 16398,
                   SAFI value 75.";
   }
 
@@ -551,7 +551,7 @@ module iana-routing-types {
         description
           "Routing Policy SAFI.";
       }
-	  
+
       enum classful-transport-safi {
         value 76;
         description

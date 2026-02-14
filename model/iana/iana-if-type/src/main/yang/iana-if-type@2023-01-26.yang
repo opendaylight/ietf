@@ -50,7 +50,7 @@ module iana-if-type {
     description
       "Fix incorrect quotation for previous 3 revision statements.";
   }
-  
+
   revision 2022-08-24 {
     description
       "Updated reference for ifType 303.";
@@ -123,7 +123,7 @@ module iana-if-type {
     description
       "Updated reference associated with ifTypes 295-296.";
   }
-  
+
   revision 2019-02-08 {
     description
       "Corrected formatting issue.";
@@ -185,7 +185,7 @@ module iana-if-type {
   revision 2015-06-12 {
     description
       "Corrected formatting issue.";
-  }  
+  }
   revision 2014-09-24 {
     description
       "Registered ifType 280.";
@@ -1668,7 +1668,7 @@ module iana-if-type {
     description
       "CATV Downstream OFDM interface.";
     reference
-      "Cable Modem Operations Support System Interface 
+      "Cable Modem Operations Support System Interface
        Specification";
   }
   identity docsOfdmaUpstream {
@@ -1676,7 +1676,7 @@ module iana-if-type {
     description
       "CATV Upstream OFDMA interface.";
     reference
-      "Cable Modem Operations Support System Interface 
+      "Cable Modem Operations Support System Interface
        Specification";
   }
   identity gfast {

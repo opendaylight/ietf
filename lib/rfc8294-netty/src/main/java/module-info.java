@@ -16,4 +16,3 @@ module org.opendaylight.ietf.rfc8294.netty {
     requires static org.eclipse.jdt.annotation;
     requires static org.osgi.annotation.bundle;
 }
-

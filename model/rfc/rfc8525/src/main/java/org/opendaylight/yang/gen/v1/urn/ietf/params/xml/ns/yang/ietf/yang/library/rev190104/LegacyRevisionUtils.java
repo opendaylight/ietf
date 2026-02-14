@@ -61,4 +61,3 @@ public final class LegacyRevisionUtils {
         return id != null ? Optional.of(Revision.of(id.getValue())) : Optional.empty();
     }
 }
-
