@@ -24,26 +24,36 @@ import java.util.regex.Pattern;
 import org.eclipse.jdt.annotation.NonNull;
 import org.opendaylight.ietf.type.util.Ipv4Utils;
 import org.opendaylight.ietf.type.util.Ipv6Utils;
-import org.opendaylight.yangtools.binding.reflect.StringValueObjectFactory;
+import org.opendaylight.yangtools.binding.ScalarTypeObject;
+import org.opendaylight.yangtools.binding.meta.UnsafeScalarTypeObjectFactory;
 
 /**
  * A set of utility methods to efficiently instantiate various {@code ietf-inet-types} DTOs.
  */
 public final class IetfInetUtil {
-    private static final StringValueObjectFactory<Ipv4AddressNoZone> V4NZ_FACTORY =
-        StringValueObjectFactory.create(Ipv4AddressNoZone.class, "0.0.0.0");
-    private static final StringValueObjectFactory<Ipv4Prefix> P4_FACTORY =
-        StringValueObjectFactory.create(Ipv4Prefix.class, "0.0.0.0/0");
-    private static final StringValueObjectFactory<Ipv6AddressNoZone> V6NZ_FACTORY =
-        StringValueObjectFactory.create(Ipv6AddressNoZone.class, "::0");
-    private static final StringValueObjectFactory<Ipv6Prefix> P6_FACTORY =
-        StringValueObjectFactory.create(Ipv6Prefix.class, "::0/0");
+    private static final @NonNull Ipv4Prefix V4_SLASH_ZERO = new Ipv4Prefix("0.0.0.0/0");
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, Ipv4AddressNoZone> V4NZ_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, Ipv4Prefix> P4_FACTORY;
+
+    private static final @NonNull Ipv6Prefix V6_SLASH_ZERO = new Ipv6Prefix( "::0/0");
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, Ipv6AddressNoZone> V6NZ_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, Ipv6Prefix> P6_FACTORY;
+
+    static {
+        final var unsafeAccess = IetfInetTypesData.META.unsafeAccess();
+        V4NZ_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new Ipv4AddressNoZone("0.0.0.0"));
+        P4_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(V4_SLASH_ZERO);
+        V6NZ_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new Ipv6AddressNoZone("::0"));
+        P6_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(V6_SLASH_ZERO);
+    }
+
     private static final Pattern HOST_IPV4_PATTERN = Pattern.compile(
         "(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])"
             + "(%[\\p{N}\\p{L}]+)?");
-    private static final Pattern HOST_IPV6_PATTERN1 = Pattern.compile("((:|[0-9a-fA-F]{0,4}):)([0-9a-fA-F]{0,4}:){0,5}"
-        +"((([0-9a-fA-F]{0,4}:)?(:|[0-9a-fA-F]{0,4}))|(((25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])\\.){3}"
-        + "(25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])))(%[\\p{N}\\p{L}]+)?");
+    private static final Pattern HOST_IPV6_PATTERN1 = Pattern.compile("""
+        ((:|[0-9a-fA-F]{0,4}):)([0-9a-fA-F]{0,4}:){0,5}\
+        ((([0-9a-fA-F]{0,4}:)?(:|[0-9a-fA-F]{0,4}))|(((25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])\\.){3}\
+        (25[0-5]|2[0-4][0-9]|[01]?[0-9]?[0-9])))(%[\\p{N}\\p{L}]+)?""");
     private static final Pattern HOST_IPV6_PATTERN2 = Pattern.compile(
         "(([^:]+:){6}(([^:]+:[^:]+)|(.*\\..*)))|((([^:]+:)*[^:]+)?::(([^:]+:)*[^:]+)?)(%.+)?");
     private static final Pattern HOST_DOMAIN_PATTERN = Pattern.compile(
@@ -111,11 +121,11 @@ public final class IetfInetUtil {
     public static IpAddressNoZone ipAddressNoZoneFor(final String str) {
         if (IPADDRESS_NO_ZONE_IPV4_PATTERN.matcher(str).matches()) {
             return new IpAddressNoZone(new Ipv4AddressNoZone(str));
-        } else if (IPADDRESS_NO_ZONE_IPV6_PATTERN.matcher(str).matches()) {
-            return new IpAddressNoZone(new Ipv6AddressNoZone(str));
-        } else {
-            throw new IllegalArgumentException("Cannot create IpAddress from " + str);
         }
+        if (IPADDRESS_NO_ZONE_IPV6_PATTERN.matcher(str).matches()) {
+            return new IpAddressNoZone(new Ipv6AddressNoZone(str));
+        }
+        throw new IllegalArgumentException("Cannot create IpAddress from " + str);
     }
 
     @Beta
@@ -426,22 +436,14 @@ public final class IetfInetUtil {
     }
 
     public static @NonNull Ipv4Prefix ipv4PrefixForShort(final byte @NonNull[] address, final int mask) {
-        if (mask == 0) {
-            // Easy case, reuse the template
-            return P4_FACTORY.getTemplate();
-        }
-
-        return v4PrefixForShort(address, 0, mask / Byte.SIZE + (mask % Byte.SIZE == 0 ? 0 : 1), mask);
+        return mask == 0 ? V4_SLASH_ZERO
+            : v4PrefixForShort(address, 0, mask / Byte.SIZE + (mask % Byte.SIZE == 0 ? 0 : 1), mask);
     }
 
     public static @NonNull Ipv4Prefix ipv4PrefixForShort(final byte @NonNull[] array, final int startOffset,
             final int mask) {
-        if (mask == 0) {
-            // Easy case, reuse the template
-            return P4_FACTORY.getTemplate();
-        }
-
-        return v4PrefixForShort(array, startOffset, mask / Byte.SIZE + (mask % Byte.SIZE == 0 ? 0 : 1), mask);
+        return mask == 0 ? V4_SLASH_ZERO
+            : v4PrefixForShort(array, startOffset, mask / Byte.SIZE + (mask % Byte.SIZE == 0 ? 0 : 1), mask);
     }
 
     private static String stripZone(final String str) {
@@ -616,7 +618,7 @@ public final class IetfInetUtil {
             final int mask) {
         if (mask == 0) {
             // Easy case, reuse the template
-            return P6_FACTORY.getTemplate();
+            return V6_SLASH_ZERO;
         }
 
         checkArgument(mask > 0 && mask <= 128, "Invalid mask %s", mask);
@@ -637,12 +639,13 @@ public final class IetfInetUtil {
         return splitPrefix(V6NZ_FACTORY, prefix.getValue());
     }
 
-    private static <T> @NonNull T prefixToAddress(final StringValueObjectFactory<T> factory, final String str) {
+    private static <T extends ScalarTypeObject<String>> @NonNull T prefixToAddress(
+            final UnsafeScalarTypeObjectFactory<String, T> factory, final String str) {
         return factory.newInstance(str.substring(0, str.lastIndexOf('/')));
     }
 
-    private static <T> @NonNull Entry<T, Integer> splitPrefix(final StringValueObjectFactory<T> factory,
-            final String str) {
+    private static <T extends ScalarTypeObject<String>> @NonNull Entry<T, Integer> splitPrefix(
+            final UnsafeScalarTypeObjectFactory<String, T> factory, final String str) {
         final int slash = str.lastIndexOf('/');
         return new SimpleImmutableEntry<>(factory.newInstance(str.substring(0, slash)),
                 Integer.valueOf(str.substring(slash + 1)));
