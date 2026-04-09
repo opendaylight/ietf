@@ -13,26 +13,30 @@ import java.util.HexFormat;
 import java.util.UUID;
 import org.eclipse.jdt.annotation.NonNull;
 import org.opendaylight.ietf.type.util.Ipv4Utils;
-import org.opendaylight.yangtools.binding.reflect.StringValueObjectFactory;
+import org.opendaylight.yangtools.binding.meta.UnsafeScalarTypeObjectFactory;
 
 /**
  * Utility methods for working with types defined in {@code ietf-yang-types}.
  */
 public final class IetfYangUtil {
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, PhysAddress> PHYS_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, DottedQuad> QUAD_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, MacAddress> MAC_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, HexString> HEX_FACTORY;
+    private static final @NonNull UnsafeScalarTypeObjectFactory<String, Uuid> UUID_FACTORY;
+
+    static {
+        final var unsafeAccess = IetfYangTypesData.META.unsafeAccess();
+        PHYS_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new PhysAddress("00:00"));
+        QUAD_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new DottedQuad("0.0.0.0"));
+        MAC_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new MacAddress("00:00:00:00:00:00"));
+        HEX_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new HexString("00"));
+        UUID_FACTORY = unsafeAccess.getUnsafeScalarTypeObjectFactory(new Uuid(UUID.randomUUID().toString()));
+    }
+
     private static final int MAC_BYTE_LENGTH = 6;
     private static final HexFormat COLON_HEXFORMAT = HexFormat.ofDelimiter(":");
     private static final byte @NonNull[] EMPTY_BYTES = new byte[0];
-
-    private static final StringValueObjectFactory<MacAddress> MAC_FACTORY =
-        StringValueObjectFactory.create(MacAddress.class, "00:00:00:00:00:00");
-    private static final StringValueObjectFactory<PhysAddress> PHYS_FACTORY =
-        StringValueObjectFactory.create(PhysAddress.class, "00:00");
-    private static final StringValueObjectFactory<HexString> HEX_FACTORY =
-        StringValueObjectFactory.create(HexString.class, "00");
-    private static final StringValueObjectFactory<DottedQuad> QUAD_FACTORY =
-        StringValueObjectFactory.create(DottedQuad.class, "0.0.0.0");
-    private static final StringValueObjectFactory<Uuid> UUID_FACTORY =
-        StringValueObjectFactory.create(Uuid.class, "f81d4fae-7dec-11d0-a765-00a0c91e6bf6");
 
     private IetfYangUtil() {
         // Hidden on purpose
