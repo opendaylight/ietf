@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc6470">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc6241/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc6470">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc6241</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc6470/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

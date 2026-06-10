@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc8349">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8344/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc8349">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8344</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8349-ietf-routing/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8349-ietf-ipv4-unicast-routing/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8349-ietf-ipv6-unicast-routing/{{versionAsInProject}}</bundle>
+    </feature>
+</features>
