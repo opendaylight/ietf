@@ -6,6 +6,5 @@
         <feature version="{{semVerRange}}">odl-ietf-model-rfc8294</feature>
         <feature version="{{semVerRange}}">odl-ietf-model-rfc8345</feature>
         <bundle>mvn:org.opendaylight.ietf.model/rfc8346-ietf-l3-unicast-topology/{{versionAsInProject}}</bundle>
-        <bundle>mvn:org.opendaylight.ietf.model/rfc8346-ietf-l3-unicast-topology-state/{{versionAsInProject}}</bundle>
     </feature>
 </features>

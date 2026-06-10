@@ -5,6 +5,5 @@
         <feature version="{{semVerRange}}">odl-ietf-model-rfc6991</feature>
         <bundle>mvn:org.opendaylight.ietf.model/iana-hardware/{{versionAsInProject}}</bundle>
         <bundle>mvn:org.opendaylight.ietf.model/rfc8348-ietf-hardware/{{versionAsInProject}}</bundle>
-        <bundle>mvn:org.opendaylight.ietf.model/rfc8348-ietf-hardware-state/{{versionAsInProject}}</bundle>
     </feature>
 </features>

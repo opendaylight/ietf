@@ -5,5 +5,6 @@
     <feature name="odl-ietf-model-rfc8346-non-nmda">
         <feature version="{{semVerRange}}">odl-ietf-model-rfc8345-non-nmda</feature>
         <feature version="{{semVerRange}}">odl-ietf-model-rfc8346</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8346-ietf-l3-unicast-topology-state/{{versionAsInProject}}</bundle>
     </feature>
 </features>

@@ -3,5 +3,6 @@
     <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8348/{{versionAsInProject}}/xml/features</repository>
     <feature name="odl-ietf-model-rfc8348-non-nmda">
         <feature version="{{semVerRange}}">odl-ietf-model-rfc8348</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8348-ietf-hardware-state/{{versionAsInProject}}</bundle>
     </feature>
 </features>

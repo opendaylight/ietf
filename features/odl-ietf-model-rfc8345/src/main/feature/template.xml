@@ -4,8 +4,6 @@
     <feature name="odl-ietf-model-rfc8345">
         <feature version="{{semVerRange}}">odl-ietf-model-rfc6991</feature>
         <bundle>mvn:org.opendaylight.ietf.model/rfc8345-ietf-network/{{versionAsInProject}}</bundle>
-        <bundle>mvn:org.opendaylight.ietf.model/rfc8345-ietf-network-state/{{versionAsInProject}}</bundle>
         <bundle>mvn:org.opendaylight.ietf.model/rfc8345-ietf-network-topology/{{versionAsInProject}}</bundle>
-        <bundle>mvn:org.opendaylight.ietf.model/rfc8345-ietf-network-topology-state/{{versionAsInProject}}</bundle>
     </feature>
 </features>
