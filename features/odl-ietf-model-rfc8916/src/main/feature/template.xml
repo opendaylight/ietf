@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc8916">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8177/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8294/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8349/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8519/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc8916">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8177</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8294</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8349</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8519</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8916/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

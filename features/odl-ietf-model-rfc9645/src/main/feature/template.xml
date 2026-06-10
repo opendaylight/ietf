@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc9645">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc9641/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc9642/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc9645">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc9641</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc9642</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/iana-tls-cipher-suite-algs/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9645-ietf-tls-client/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9645-ietf-tls-common/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9645-ietf-tls-server/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

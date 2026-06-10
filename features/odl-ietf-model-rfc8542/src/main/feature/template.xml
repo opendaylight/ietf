@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc8542">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8345/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc8542">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8345</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8542-ietf-dc-fabric-topology/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8542-ietf-dc-fabric-types/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

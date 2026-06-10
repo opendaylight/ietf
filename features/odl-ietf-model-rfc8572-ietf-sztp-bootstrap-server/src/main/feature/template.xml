@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc8572-ietf-sztp-bootstrap-server">
+    <repository>mvn:org.opendaylight.yangtools/odl-yangtools-binding-spec/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc8572-ietf-sztp-bootstrap-server">
+        <feature version="{{semVerRange}}">odl-yangtools-binding-spec</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc8572-ietf-sztp-bootstrap-server/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc9644">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc7317-iana-crypt-hash/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc9641/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc9642/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc9644">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc7317-iana-crypt-hash</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc9641</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc9642</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/iana-ssh-encryption-algs/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/iana-ssh-key-exchange-algs/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/iana-ssh-mac-algs/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/iana-ssh-public-key-algs/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9644-ietf-ssh-client/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9644-ietf-ssh-common/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9644-ietf-ssh-server/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

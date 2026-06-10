@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc9643">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc9640/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc9643">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc9640</feature>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9643-ietf-tcp-client/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9643-ietf-tcp-common/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc9643-ietf-tcp-server/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

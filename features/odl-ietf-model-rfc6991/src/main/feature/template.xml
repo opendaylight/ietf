@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc6991">
+    <repository>mvn:org.opendaylight.yangtools/odl-yangtools-binding-spec/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc6991">
+        <feature version="{{semVerRange}}">odl-yangtools-binding-spec</feature>
+        <bundle>mvn:org.opendaylight.ietf/ietf-type-util/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc6991-ietf-inet-types/{{versionAsInProject}}</bundle>
+        <bundle>mvn:org.opendaylight.ietf.model/rfc6991-ietf-yang-types/{{versionAsInProject}}</bundle>
+    </feature>
+</features>

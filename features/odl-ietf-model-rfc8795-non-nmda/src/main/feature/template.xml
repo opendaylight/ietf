@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="odl-ietf-model-rfc8795-non-nmda">
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8795/{{versionAsInProject}}/xml/features</repository>
+    <repository>mvn:org.opendaylight.ietf/odl-ietf-model-rfc8345-non-nmda/{{versionAsInProject}}/xml/features</repository>
+    <feature name="odl-ietf-model-rfc8795-non-nmda">
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8795</feature>
+        <feature version="{{semVerRange}}">odl-ietf-model-rfc8345-non-nmda</feature>
+    </feature>
+</features>
