@@ -35,9 +35,5 @@
             <groupId>org.opendaylight.ietf.model</groupId>
             <artifactId>rfc8348-ietf-hardware</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.opendaylight.ietf.model</groupId>
-            <artifactId>rfc8348-ietf-hardware-state</artifactId>
-        </dependency>
     </dependencies>
 </project>
