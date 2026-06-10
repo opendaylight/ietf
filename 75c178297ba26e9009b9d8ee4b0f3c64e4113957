@@ -22,6 +22,30 @@
       },
       "revId": "75c178297ba26e9009b9d8ee4b0f3c64e4113957",
       "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0d44563_8aa0308a",
+        "filename": "features/odl-ietf-model-rfc8348/src/main/feature/template.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2026-06-10T12:10:17Z",
+      "side": 1,
+      "message": "this will be investigated separately",
+      "parentUuid": "5294cb6b_c13c1d43",
+      "range": {
+        "startLine": 8,
+        "startChar": 48,
+        "endLine": 8,
+        "endChar": 75
+      },
+      "revId": "75c178297ba26e9009b9d8ee4b0f3c64e4113957",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81"
     }
   ]
 }
