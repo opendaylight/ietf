@@ -19,6 +19,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.AbstractMap.SimpleImmutableEntry;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 import org.eclipse.jdt.annotation.NonNull;
@@ -672,7 +673,7 @@ public final class IetfInetUtil {
         try {
             return addressStringV6(Inet6Address.getByAddress(null, bytes, null));
         } catch (UnknownHostException e) {
-            throw new IllegalArgumentException(String.format("Invalid input %s", bytes), e);
+            throw new IllegalArgumentException("Invalid input " + Arrays.toString(bytes), e);
         }
     }
 
