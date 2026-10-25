@@ -15,8 +15,6 @@ on:
     types: [opened, reopened, edited, synchronize, closed]
     branches:
       - master
-      - main
-      - "stable/*"
       - "[0-9]*.x"
 
 concurrency:
