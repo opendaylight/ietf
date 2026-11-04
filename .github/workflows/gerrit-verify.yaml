@@ -73,9 +73,8 @@ jobs:
 
   maven-verify:
     needs: prepare
-    # use compose-jjb-verify from the v0.4 series of releng-reusable-workflows
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/compose-maven-verify.yaml@main
+    uses: lfit/releng-reusable-workflows/.github/workflows/compose-maven-verify.yaml@fc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -102,7 +101,7 @@ jobs:
   pre-commit-linting:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/compose-repo-linting.yaml@f7aae218f1fa0257e3dcd19f5c7d3f88f482f266 # v0.10.1
+    uses: lfit/releng-reusable-workflows/.github/workflows/compose-repo-linting.yaml@fc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
