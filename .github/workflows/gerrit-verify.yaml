@@ -71,7 +71,7 @@ jobs:
   maven-verify:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/compose-maven-verify.yaml@e3bb02dd0d2e5027cde63732fe00f591d6ecec03 # v0.11.0
+    uses: lfit/releng-reusable-workflows/.github/workflows/compose-maven-verify.yaml@fc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -98,7 +98,7 @@ jobs:
   tox-verify:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-tox-verify.yaml@b4c8bfdea114d034bfa6ed2fe2c9775bc091d5ca # v0.2.28
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-tox-verify.yamlfc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -114,7 +114,7 @@ jobs:
   pre-commit-linting:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/compose-repo-linting.yaml@b4c8bfdea114d034bfa6ed2fe2c9775bc091d5ca # v0.2.28
+    uses: lfit/releng-reusable-workflows/.github/workflows/compose-repo-linting.yaml@fc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -128,7 +128,7 @@ jobs:
 
   info-yaml-verify:
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-required-info-yaml-verify.yaml@b4c8bfdea114d034bfa6ed2fe2c9775bc091d5ca # v0.2.28
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-required-info-yaml-verify.yamlfc3aea6f1ec56737c3cdd8fe1c46cbbb7209394b # v0.11.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
